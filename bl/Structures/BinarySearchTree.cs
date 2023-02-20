@@ -12,17 +12,7 @@ public class BinarySearchTree
 
     public void Add(int value)
     {
-        if (_root == null)
-        {
-            _root = new Node()
-            {
-                Value = value,
-            };
-        }
-        else
-        {
-            _root = Add(_root, value);
-        }
+        _root = Add(_root, value);
     }
 
     public string PreOrder()
